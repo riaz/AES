@@ -1,0 +1,43 @@
+[INFO] (nea.utils) Arguments:
+[INFO] (nea.utils)   aggregation: mot
+[INFO] (nea.utils)   algorithm: rmsprop
+[INFO] (nea.utils)   batch_size: 32
+[INFO] (nea.utils)   cnn_dim: 0
+[INFO] (nea.utils)   cnn_window_size: 3
+[INFO] (nea.utils)   command: train_nea.py -tr train.tsv -tu dev.tsv -ts test.tsv -p 1 --emb embeddings.w2v.txt -o outpt_dir
+[INFO] (nea.utils)   dev_path: dev.tsv
+[INFO] (nea.utils)   dropout_prob: 0.5
+[INFO] (nea.utils)   emb_dim: 50
+[INFO] (nea.utils)   emb_path: embeddings.w2v.txt
+[INFO] (nea.utils)   epochs: 50
+[INFO] (nea.utils)   loss: mse
+[INFO] (nea.utils)   maxlen: 0
+[INFO] (nea.utils)   model_type: regp
+[INFO] (nea.utils)   out_dir_path: outpt_dir
+[INFO] (nea.utils)   prompt_id: 1
+[INFO] (nea.utils)   recurrent_unit: lstm
+[INFO] (nea.utils)   rnn_dim: 300
+[INFO] (nea.utils)   seed: 1234
+[INFO] (nea.utils)   skip_init_bias: False
+[INFO] (nea.utils)   test_path: test.tsv
+[INFO] (nea.utils)   train_path: train.tsv
+[INFO] (nea.utils)   vocab_path: None
+[INFO] (nea.utils)   vocab_size: 4000
+[INFO] (nea.asap_reader) Creating vocabulary from: train.tsv
+[INFO] (nea.asap_reader)   146984 total words, 6398 unique words
+[INFO] (nea.asap_reader)   Vocab size: 4000
+[INFO] (nea.asap_reader) Reading dataset from: train.tsv
+[INFO] (nea.asap_reader)   <num> hit rate: 0.00%, <unk> hit rate: 1.63%
+[INFO] (nea.asap_reader) Reading dataset from: dev.tsv
+[INFO] (nea.asap_reader)   <num> hit rate: 0.00%, <unk> hit rate: 3.51%
+[INFO] (nea.asap_reader) Reading dataset from: test.tsv
+[INFO] (nea.asap_reader)   <num> hit rate: 0.00%, <unk> hit rate: 3.48%
+[INFO] (__main__) Statistics:
+[INFO] (__main__)   train_x shape: (356, 945)
+[INFO] (__main__)   dev_x shape:   (355, 886)
+[INFO] (__main__)   test_x shape:  (356, 867)
+[INFO] (__main__)   train_y shape: (356,)
+[INFO] (__main__)   dev_y shape:   (355,)
+[INFO] (__main__)   test_y shape:  (356,)
+[INFO] (__main__)   train_y mean: 8.52809, stdev: 1.49223, MFC: [8.0]
+[INFO] (nea.models) Building a REGRESSION model with POOLING
