@@ -11,3 +11,6 @@ An automatic essay scoring system based on convolutional and recurrent neural ne
 https://www.kaggle.com/c/asap-aes/data
 
 
+### Run ###
+
+![Image of Running the Code](img/snap.png)
